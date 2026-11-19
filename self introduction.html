@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>HomeWork1</title>
+
+   <style>
+      body {
+         background-color: gray;
+         font-family: "Times New Roman", serif;
+      }
+
+      h1, h2 {
+         font-family: Helvetica, serif;
+      }
+
+      .red-text {
+         color: red;
+      }
+
+      .floated {
+         background-color: skyblue;
+         padding: 1.5em;
+         margin-left: .5em;
+         margin-bottom: .5em;
+         width: 50%;
+         border: 1px solid skyblue;
+      }
+
+      p {
+         margin: 0.9em 0em;
+      }
+
+      @media handheld and (max-width: 480px),
+         screen and (max-device-width: 480px),
+         screen and (max-width: 480px) {
+         .into-box {
+            -webkit-column-count: 1;
+            column-count: 1;
+         }
+      }
+
+      @media only screen and (min-width: 481px) and (max-width: 1024px) {
+         .into-box {
+            -webkit-column-count: 2;
+            column-count: 2;
+            -webkit-column-gap: 30px;
+            column-gap: 30px;
+            -webkit-column-rule: 1px outset black;
+            column-rule: 1px outset black;
+         }
+      }
+
+      @media only screen and (min-width: 1025px) {
+         .into-box {
+            -webkit-column-count: 3;
+            column-count: 3;
+            -webkit-column-gap: 30px;
+            column-gap: 30px;
+            -webkit-column-rule: 1px outset black;
+            column-rule: 1px outset black;
+         }
+      }
+   </style>
+</head>
+
+<body>
+
+   <h1>Self-introduction</h1>
+
+   <p>
+      Hello everyone, my name is Ziyue Zhou. I am a senior majoring in Computer
+      Science at the University of Houston-Downtown. I chose computer science
+      because I have always been interested in computer technology and software
+      development. During my studies, I also acquired a wealth of interesting
+      and important knowledge, including C++, Python, the Internet of Things
+      (IoT), databases, and more. When I'm not studying, I also enjoy exploring
+      new tech products or playing tennis with friends when the weather is nice.
+   </p>
+
+   <h2>Here is link related to Computer Science & Engineering Technology:</h2>
+   <p><strong>Click it to visit.</strong></p>
+
+   <p>
+      <a href="https://www.uhd.edu/academics/sciences/computer-science-engineering-technology/index.aspx"
+         target="_blank"
+         rel="noopener noreferrer">
+         Computer Science & Engineering Technology
+      </a>
+   </p>
+
+   <h2>Here is my picture:</h2>
+   <div class="floated">
+      <img src="Myself.png" width="300" height="300" alt="The picture of Myself">
+   </div>
+
+   <h2>These are my hobbies:</h2>
+   <div class="floated">
+      <ul>
+         <li>
+            Sport:
+            <ol>
+               <li class="red-text">Basketball</li>
+               <li class="red-text">Tennis</li>
+               <li class="red-text">Table tennis</li>
+               <li class="red-text">Computer games</li>
+            </ol>
+         </li>
+
+         <li>
+            Learning (out of interest):
+            <ol>
+               <li class="red-text">C++</li>
+               <li class="red-text">Python</li>
+               <li class="red-text">Game Development</li>
+               <li class="red-text">IoT</li>
+            </ol>
+         </li>
+      </ul>
+   </div>
+
+   <h2>This is a table about me:</h2>
+   <table border="1">
+      <caption><strong>Table</strong></caption>
+
+      <thead>
+         <tr>
+            <th>My Favorite</th>
+            <th>Answer</th>
+         </tr>
+      </thead>
+
+      <tbody>
+         <tr>
+            <td>Favorite programming language</td>
+            <td class="red-text">C++</td>
+         </tr>
+         <tr>
+            <td>Favorite sport</td>
+            <td>Tennis</td>
+         </tr>
+         <tr>
+            <td>Favorite food</td>
+            <td class="red-text">Hot pot</td>
+         </tr>
+         <tr>
+            <td>Favorite pet</td>
+            <td>Cat</td>
+         </tr>
+         <tr>
+            <td>Favorite Movie</td>
+            <td class="red-text">"12 Angry Men"</td>
+         </tr>
+      </tbody>
+   </table>
+
+   <h2>More About Me</h2>
+
+   <div class="into-box">
+      <p>
+         Hello everyone, my name is Ziyue Zhou. I am currently a senior majoring
+         in Computer Science at the University of Houston-Downtown. I chose
+         computer science because I have always been fascinated by technology,
+         programming, and the way software can solve real-world problems.
+      </p>
+
+      <p>
+         Throughout my studies, I have gained experience in several areas,
+         including C++, Python, databases, networking, IoT systems, and
+         robotics. I enjoy learning how different technologies work together and
+         how they can be applied to build useful applications.
+      </p>
+
+      <p>
+         Beyond my academic pursuits, I enjoy exploring various types of
+         computer hardware and other tech products; I also interest in game
+         engines. I also like playing sports such as basketball, tennis, and
+         table tennis. I often play tennis and basketball with friends.
+      </p>
+
+      <p>
+         In my daily life, I particularly enjoy making things myself whether
+         it’s modifying equipment, experimenting with new tools, or conducting
+         small-scale projects. At home, I look into the latest tech news, or
+         play computer games while reflecting on the different game engines and
+         software designs that each game requires.
+      </p>
+   </div>
+
+</body>
+</html>
